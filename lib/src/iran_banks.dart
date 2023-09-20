@@ -32,6 +32,7 @@ class IranBanks extends StatefulWidget {
     required this.shomarehHesab,
     this.heighBackImage = 150,
     this.widthBackImage = 300,
+    this.fontFamily = '',
   }) : super(key: key);
   final int cartNumber;
   final String expCartMonth;
@@ -43,6 +44,7 @@ class IranBanks extends StatefulWidget {
   final double height, width;
   final double heighBackImage;
   final double widthBackImage;
+  final String fontFamily;
   final BankType banktype;
   @override
   // ignore: library_private_types_in_public_api
@@ -60,37 +62,37 @@ class _IranBanksState extends State<IranBanks> {
     // Determine the image path based on the bankType
     switch (widget.banktype) {
       case BankType.meli:
-        imagePath = 'assets/melilogo.png';
+        imagePath = 'https://s6.uupload.ir/files/melilogo_scqr.png';
         return imagePath;
       case BankType.ayandeh:
-        imagePath = 'assets/ayandehlogo.png';
+        imagePath = 'https://s6.uupload.ir/files/ayandehlogo_u8rm.png';
         return imagePath;
       case BankType.sepah:
-        imagePath = 'assets/sepahlogo.png';
+        imagePath = 'https://s6.uupload.ir/files/sepahlogo_rzc6.png';
         return imagePath;
       case BankType.keshavarzi:
-        imagePath = 'assets/keshavarzilogo.png';
+        imagePath = 'https://s6.uupload.ir/files/keshavarzilogo_enos.png';
         return imagePath;
       case BankType.maskan:
-        imagePath = 'assets/maskanlogo.png';
+        imagePath = 'https://s6.uupload.ir/files/maskanlogo_gg5f.png';
         return imagePath;
       case BankType.sanatvamadan:
-        imagePath = 'assets/sanatvamadanlogo.png';
+        imagePath = 'https://s6.uupload.ir/files/sanatvamadanlogo_8ecj.png';
         return imagePath;
       case BankType.saderat:
-        imagePath = 'assets/saderatlogo.png';
+        imagePath = 'https://s6.uupload.ir/files/saderatlogo_ntvq.png';
         return imagePath;
       case BankType.taavon:
-        imagePath = 'assets/taavonlogo.png';
+        imagePath = 'https://s6.uupload.ir/files/taavonlogo_o3bi.png';
         return imagePath;
       case BankType.postbank:
-        imagePath = 'assets/postbanklogo.png';
+        imagePath = 'https://s6.uupload.ir/files/postbanklogo_j5rs.png';
         return imagePath;
       case BankType.refah:
-        imagePath = 'assets/refahlogo.png';
+        imagePath = 'https://s6.uupload.ir/files/refahlogo_h5n1.png';
         return imagePath;
       case BankType.melat:
-        imagePath = 'assets/melatlogo.png';
+        imagePath = 'https://s6.uupload.ir/files/melatlogo_mzza.png';
         return imagePath;
     }
   }
@@ -292,8 +294,8 @@ class _IranBanksState extends State<IranBanks> {
               borderRadius: const BorderRadius.all(Radius.circular(8)),
               child: ColorFiltered(
                 colorFilter: ColorFilter.mode(setColorBank(), BlendMode.color),
-                child: Image.asset(
-                  "assets/back.png",
+                child: Image.network(
+                  "https://s6.uupload.ir/files/back_c3q4.png",
                   height: widget.heighBackImage,
                   width: widget.heighBackImage,
                   fit: BoxFit.fill,
@@ -312,12 +314,12 @@ class _IranBanksState extends State<IranBanks> {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Image.asset(
-                      "assets/shetab.png",
+                    Image.network(
+                      "https://s6.uupload.ir/files/shetab_ftnh.png",
                       height: 50,
                       width: 50,
                     ),
-                    Image.asset(
+                    Image.network(
                       setIMageAdress(),
                       height: 50,
                       width: 50,
@@ -350,8 +352,8 @@ class _IranBanksState extends State<IranBanks> {
                     children: [
                       Text(
                         widget.cartNumber.toString(),
-                        style: const TextStyle(
-                          fontFamily: 'Kalameh',
+                        style: TextStyle(
+                          fontFamily: widget.fontFamily,
                           fontWeight: FontWeight.bold,
                         ),
                       ),
@@ -362,15 +364,15 @@ class _IranBanksState extends State<IranBanks> {
                           children: [
                             Text(
                               "${widget.expCartYear}/${widget.expCartMonth}",
-                              style: const TextStyle(
-                                fontFamily: 'Kalameh',
+                              style: TextStyle(
+                                fontFamily: widget.fontFamily,
                                 fontWeight: FontWeight.bold,
                               ),
                             ),
                             Text(
                               widget.usernameAndFamily,
-                              style: const TextStyle(
-                                fontFamily: 'Kalameh',
+                              style: TextStyle(
+                                fontFamily: widget.fontFamily,
                                 fontWeight: FontWeight.bold,
                               ),
                             ),
@@ -400,15 +402,15 @@ class _IranBanksState extends State<IranBanks> {
                           children: [
                             Text(
                               "CVV2:${widget.cvv2}",
-                              style: const TextStyle(
-                                fontFamily: 'Kalameh',
+                              style: TextStyle(
+                                fontFamily: widget.fontFamily,
                                 fontWeight: FontWeight.bold,
                               ),
                             ),
                             Text(
                               widget.shomarehHesab,
-                              style: const TextStyle(
-                                fontFamily: 'Kalameh',
+                              style: TextStyle(
+                                fontFamily: widget.fontFamily,
                                 fontWeight: FontWeight.bold,
                               ),
                             ),
@@ -460,15 +462,15 @@ class _IranBanksState extends State<IranBanks> {
                 color: Colors.white,
               ),
             ),
-            const Padding(
-              padding: EdgeInsets.all(8.0),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.end,
                 children: [
                   Text(
                     "استفاده از این کارت صرفا مخصوص دارنده کارت میباشد",
                     style: TextStyle(
-                      fontFamily: 'Kalameh',
+                      fontFamily: widget.fontFamily,
                       fontSize: 12,
                       fontWeight: FontWeight.bold,
                     ),
@@ -476,7 +478,7 @@ class _IranBanksState extends State<IranBanks> {
                   Text(
                     "در صورتی که صاحب کارت بانکی نیستید با بانک در میان بگذارید",
                     style: TextStyle(
-                      fontFamily: 'Kalameh',
+                      fontFamily: widget.fontFamily,
                       fontSize: 12,
                       fontWeight: FontWeight.bold,
                     ),
