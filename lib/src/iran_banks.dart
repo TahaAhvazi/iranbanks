@@ -62,36 +62,47 @@ class _IranBanksState extends State<IranBanks> {
     // Determine the image path based on the bankType
     switch (widget.banktype) {
       case BankType.meli:
+        //add address of images network on the host to recive them
         imagePath = 'https://s6.uupload.ir/files/melilogo_scqr.png';
         return imagePath;
+      //add address of images network on the host to recive them
       case BankType.ayandeh:
+        //add address of images network on the host to recive them
         imagePath = 'https://s6.uupload.ir/files/ayandehlogo_u8rm.png';
         return imagePath;
       case BankType.sepah:
+        //add address of images network on the host to recive them
         imagePath = 'https://s6.uupload.ir/files/sepahlogo_rzc6.png';
         return imagePath;
       case BankType.keshavarzi:
+        //add address of images network on the host to recive them
         imagePath = 'https://s6.uupload.ir/files/keshavarzilogo_enos.png';
         return imagePath;
       case BankType.maskan:
+        //add address of images network on the host to recive them
         imagePath = 'https://s6.uupload.ir/files/maskanlogo_gg5f.png';
         return imagePath;
       case BankType.sanatvamadan:
+        //add address of images network on the host to recive them
         imagePath = 'https://s6.uupload.ir/files/sanatvamadanlogo_8ecj.png';
         return imagePath;
       case BankType.saderat:
+        //add address of images network on the host to recive them
         imagePath = 'https://s6.uupload.ir/files/saderatlogo_ntvq.png';
         return imagePath;
       case BankType.taavon:
         imagePath = 'https://s6.uupload.ir/files/taavonlogo_o3bi.png';
         return imagePath;
       case BankType.postbank:
+        //add address of images network on the host to recive them
         imagePath = 'https://s6.uupload.ir/files/postbanklogo_j5rs.png';
         return imagePath;
       case BankType.refah:
+        //add address of images network on the host to recive them
         imagePath = 'https://s6.uupload.ir/files/refahlogo_h5n1.png';
         return imagePath;
       case BankType.melat:
+        //add address of images network on the host to recive them
         imagePath = 'https://s6.uupload.ir/files/melatlogo_mzza.png';
         return imagePath;
     }
@@ -103,33 +114,52 @@ class _IranBanksState extends State<IranBanks> {
       case BankType.meli:
         return Colors.blue;
       case BankType.ayandeh:
+        //set colors for each bank base on its icon
         return const Color.fromARGB(255, 187, 106, 0);
 
       case BankType.sepah:
+        //set colors for each bank base on its icon
+
         return const Color.fromARGB(255, 185, 224, 255);
 
       case BankType.keshavarzi:
+        //set colors for each bank base on its icon
+
         return const Color.fromARGB(255, 243, 240, 33);
 
       case BankType.maskan:
+        //set colors for each bank base on its icon
+
         return const Color.fromARGB(255, 224, 91, 1);
 
       case BankType.sanatvamadan:
+        //set colors for each bank base on its icon
+
         return const Color.fromARGB(129, 0, 0, 0);
 
       case BankType.saderat:
+        //set colors for each bank base on its icon
+
         return const Color.fromARGB(174, 0, 17, 253);
 
       case BankType.taavon:
+        //set colors for each bank base on its icon
+
         return const Color.fromARGB(255, 88, 173, 241);
 
       case BankType.postbank:
+        //set colors for each bank base on its icon
+
         return const Color.fromARGB(255, 2, 146, 9);
 
       case BankType.refah:
+        //set colors for each bank base on its icon
+
         return const Color.fromARGB(255, 107, 33, 243);
 
       case BankType.melat:
+        //set colors for each bank base on its icon
+
         return Colors.red;
     }
   }
