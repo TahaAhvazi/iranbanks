@@ -1,6 +1,6 @@
 name: iranbanks
 description: package that help iranian developers to use ready and beutiful cart banks with fonts and assets they want.
-version: 0.0.1
+version: 0.0.2
 homepage: 'https://github.com/TahaAhvazi/iranbanks'
 
 environment:
