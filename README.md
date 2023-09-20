@@ -6,7 +6,7 @@ By using this package, you will be able to easily create a beautiful bottom navi
 🟢داکیومنت فارسی در مورد نحوه استفاده از این پکیج در آینده نوشته خواهد شد
 
 
-![vertical_nav_bar(1)](https://github.com/TahaAhvazi/iranbanks/assets/86960501/055c85ae-bcc3-4817-91b7-92d9f4725a7a)
+![IranBanks](https://github.com/TahaAhvazi/iranbanks/assets/86960501/055c85ae-bcc3-4817-91b7-92d9f4725a7a)
 
 
 
