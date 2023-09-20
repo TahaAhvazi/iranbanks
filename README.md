@@ -3,7 +3,7 @@
 
 By using this package, you will be able to easily create a beautiful bottom navigation bar in flutter and use it on diffrent Os, here is the documantation about how to use it💡
 
-🟢داکیومنت فارسی در مورد نحوه استفاده از این پکیج در ادامه آمده است🟢
+🟢داکیومنت فارسی در مورد نحوه استفاده از این پکیج در آینده نوشته خواهد شد
 
 
 ![vertical_nav_bar(1)](https://github.com/TahaAhvazi/iranbanks/assets/86960501/055c85ae-bcc3-4817-91b7-92d9f4725a7a)
