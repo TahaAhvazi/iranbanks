@@ -1,6 +1,6 @@
 name: iranbanks
 description: package that help iranian developers to use ready and beutiful cart banks with fonts and assets they want.
-version: 0.0.2
+version: 0.0.3
 homepage: 'https://github.com/TahaAhvazi/iranbanks'
 
 environment:
@@ -38,10 +38,10 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
-  fonts:
-    - family: Kalameh
-      fonts:
-        - asset: fonts/kalameh.ttf
+  # fonts:
+  #   - family: Kalameh
+  #     fonts:
+  #       - asset: fonts/kalameh.ttf
   #       - asset: fonts/Schyler-Italic.ttf
   #         style: italic
   #   - family: Trajan Pro
